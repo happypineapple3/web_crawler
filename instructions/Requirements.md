@@ -102,7 +102,7 @@ print(r.text)
 <html><head><title>Current IP Check</title></head><body>Current IP Address: 13.103.37.144</body></html>
 ```
 
-See the [requests.py program](../demo/requests.py) for a more complete demonstration.
+See the [request.py program](../demo/request.py) for a more complete demonstration.
 
 
 ### [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) HTML Parsing Library

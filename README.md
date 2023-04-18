@@ -44,7 +44,7 @@ In addition to the crawler that you will write, 5 code demos and a test server a
 
 0.  `src/crawler.py` - The starter code that you will complete
 1.  `demo/beautifulsoup.py` - Example of how to use the BeautifulSoup library
-2.  `demo/requests.py` - Example of how to use the Requests library
+2.  `demo/request.py` - Example of how to use the Requests library
 3.  `demo/urljoin.py` - Example of how to use the URL Join library
 4.  `demo/urlparse.py` - Example of how to use the URL Parse library
 5.  `demo/exceptions.py` - Gotta Catch 'Em All!, an exception handling game

@@ -181,7 +181,7 @@ If you gave your repo the wrong name, you can fix it in GitLab before the due da
         cs1440-assn6
         |-- demo
         |   |-- beautifulsoup.py
-        |   |-- requests.py
+        |   |-- request.py
         |   |-- urljoin.py
         |   |-- urlparse.py
         |   |-- README.md
