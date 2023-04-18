@@ -499,7 +499,7 @@ SyntaxError <|-- IndentationError
     *   This does not mean that `crawl()` cannot use a loop
     *   This means that each step away from `StartingURL` results in a new call to `crawl()`
     *   The return value of `crawl()` may be ignored
-*   Use `requests.get()` to fetch HTML content from URIs
+*   Use `requests.get()` to fetch HTML content from URLs
 *   Use `BeautifulSoup` to find `<a>` tags in HTML content
 *   From the `urllib.parse` library, use the functions `urlparse`, `urljoin` and `urldefrag` to manipulate URLs
     *   Fragments are stripped from URLs to avoid duplicate visits
