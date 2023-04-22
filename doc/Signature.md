@@ -1,8 +1,7 @@
-*TODO: Delete these example entries and replace with your own*
 
 | Date        | Time Spent | Events
 |-------------|------------|--------------------
-| Nocember 9  | 1 hour     | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+| April 22    | 1.5 hours  | Finished phase 0.
 | Nocember 10 | 0.75 hours | Itaque hic ipse iam pridem est reiectus.
 | Nocember 11 | 1.25 hours | Restinguet citius, si ardentem acceperit.
 | Nocember 12 | 2.5 hours  | Quid de Platone aut de Democrito loquar.
