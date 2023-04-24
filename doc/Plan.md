@@ -72,15 +72,50 @@ Deliver:
 
 Deliver:
 
-*   [ ] Function signatures that include:
+*   [X] Function signatures that include:
     *   Descriptive names.
     *   Parameter lists.
     *   Documentation strings that explain its purpose and types of inputs and outputs.
-*   [ ] Pseudocode that captures how each function works.
+## Function signatures
+* def crawl(url, depth=0, maxDepth, visited)
+    * 'url' is the current url address that the function is crawling
+    * 'depth' is the current depth level of the crawler from the original url (provided by the user)
+    * 'maxDepth' is the maximum depth that the crawler will go (specified by the user)
+    * 'visited' is a set that contains url's that have already been visited
+* This is the main function of the program. It's purpose is to start with a url (provided by the user), and from there search the page for more links. After finding a link, it moves to that website, scanning for more links all while keeping track of how far away it is from the initial url and adding any visited url's into the 'visited' set. Once the crawler visits every page within the specified 'maxDepth', it stops.
+* When it visits a new page, it prints out the url to the console with an indentation equal to the depth level. It also will report how many unique pages it visits as well as the time it took to complete the crawl.
+
+*   [X] Pseudocode that captures how each function works.
     *   Pseudocode != source code.  Do not paste your finished source code into this part of the plan.
 *   Explain what happens in the face of good and bad input.
     *   Write a few specific examples that occur to you, and use them later when testing.
-*   [ ] **Tag** the last commit in this phase `designed` and push it to GitLab.
+## Pseudocode
+```
+begin timing
+def crawl(url, depth, maxDepth, visited):
+    if (the provided url is a valid url and not in visited) and depth<=maxDepth:
+        print out the current url with an indentation equal to depth
+        mark the url about to be visited as visited
+        try:
+            use the requests library to fetch the webpage by url
+        else:
+            print the failed request
+            return
+        scan resulting HTML for anchor tags
+        for each anchor tag:
+            if the tag has no 'href' attribute: continue
+            discard the 'fragment' portion of url
+            check if the 'href' attribute is an absolute or relative path. If relative, make it an absolute using urljoin()
+            call crawl on the new url
+            increment depth by 1
+end timing
+```
+## Good and bad input
+* In the face of good input, this function will work exactly as it should. It will print out each url that it visits with an indentation equal to its current depth. It will visit every website possible, skipping over previously visited sites and making use of the set. It will dynamically create absolute url's whenever it needs to, and it will not visit any invalid url's nor will it exceed its max depth. The program will also terminate upon the user entering Ctrl C and will print out its final report regardless of when Ctrl C was pressed. It might take some timing right to figure out exactly how to word and position the try/except block so that this will always happen. I'll have to give it a large maxDepth so that I'll have time to force the shutdown and make sure that the report message is always printed.
+
+* In the face of bad input, the program should still nearly perfectly run. The only place where the bad input can cause the program to not run is if the user provides an invalid url as an argument for the program to start. Otherwise, the program will be able to handle any errors that occur while it is running. Messages will print out describing the error, but the program will continue to run. If the user does provide an invalid url, then the program will print a message explaining the error and asking the user for a valid url. The program will then quit, and the user must try again. I'll need to test multiple variations of an invalid url to make sure that the program doesn't try running with any of them (i.e. anything that doesn't start with http:// or https://).
+
+*   [X] **Tag** the last commit in this phase `designed` and push it to GitLab.
     *   *Grace Points: if this tag is pushed by midnight on the Sunday before the due date, you will receive up to 5 points back*
 
 
