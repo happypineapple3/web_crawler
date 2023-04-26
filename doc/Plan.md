@@ -126,10 +126,15 @@ end timing
 
 Deliver:
 
-*   [ ] More or less working code.
-*   [ ] Note any relevant and interesting events that happened while you wrote the code.
+*   [X] More or less working code.
+*   [X] Note any relevant and interesting events that happened while you wrote the code.
     *   e.g. things you learned, things that didn't go according to plan.
-*   [ ] **Tag** the last commit in this phase `implemented` and push it to GitLab.
+## Things that happened
+* I would sat that the thing that surprised me the most was how quickly it all came together. Maybe I'm just used to working on larger projects now, but by the time I had finished by implementation, I was surpised that it was already done. Sure, it certainly wasn't bug-free, but it worked well enough.
+* There were a few incorrect logic statements in my pseudocde that required a change during the implementation, but for the most part, I was surpised by how closely my code resembled the pseudocode. I guess that's a good thing, but with previous projects, I've had to change a lot. It was nice with this assignment.
+* It was also just interesting to use requests and BeautifulSoup. These are entirely new libraries to me, and though I was a little nervous at first, I found that they were a lot easier to use than I had previously thought. 
+
+*   [X] **Tag** the last commit in this phase `implemented` and push it to GitLab.
 
 
 ## Phase 3: Testing and Debugging (tag name `tested`)
