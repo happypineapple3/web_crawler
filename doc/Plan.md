@@ -184,17 +184,36 @@ Spend a few minutes writing thoughtful answers to these questions.  They are mea
 
 Deliver:
 
-*   [ ] Write brief and honest answers to these questions:
+*   [X] Write brief and honest answers to these questions:
+
     *   What parts of your program are sloppily written and hard to understand?
+        * I feel like most of the program is written as cleanly as it can be. It's a small program, and it's straight to the point where it needs to be. I don't think that any part of it is particularly difficult to understand.
+
         *   Are there parts of your program which you aren't quite sure how/why they work?
+            * The only parts that confuse me are the 'except' blocks. I understand how a 'try/except' block works, but I'm unsure of the exceptions being caught within the blocks.
+
         *   If a bug is reported in a few months, how long would it take you to find the cause?
+            * I don't think it would take super long to find the bug. There aren't many places to hide, and if a bug were to appear, it would be easy to track it in the program. There aren't a lot of moving pieces in this assignment.
+
     *   Will your documentation make sense to...
         *   ...anybody besides yourself?
+            * Yes. I feel that I do a good job in writing my documentation so that it's written in a way that a general audience would understand. Granted, it will make more sense to readers with a programming background, but even so, I don't write with jargon, and I try to be as specific as I can be where it is necessary.
+
         *   ...yourself in six month's time?
+            * Yes. With a little bit of time to read over all the documentation, I'm certain that I would understand it as well as I do right now (hopefully better than right now) in six month's time.
+
     *   How easy will it be to add a new feature to this program in a year?
+        * It would be fairly easy to add a new feature to the program. Because of how cleanly it's written, it would be easy to identify where the new feature would fit in and how it should be written to follow the rest of the code.
+
     *   Will your program continue to work after upgrading...
         *   ...your computer's hardware?
+            * Yes. Upgrading the computer's hardware will only improve how quickly the program can run.
+
         *   ...the operating system?
+            * Yes. Nothing about the program depends on the current operating system. It will continue to run on any operating system.
+
         *   ...to the next version of Python?
-*   [ ] Make one final commit and push your **completed** Software Development Plan to GitLab.
-*   [ ] Respond to the **Assignment Reflection Survey** on Canvas.
+            * Yes, but it's important for the user to remember to install 'requirements.txt' in case that gets deleted. That is required for the program to work.
+
+*   [X] Make one final commit and push your **completed** Software Development Plan to GitLab.
+*   [X] Respond to the **Assignment Reflection Survey** on Canvas.

@@ -5,9 +5,5 @@
 | April 23    | 2 hours    | Re-read all the documentation and finished phase 1.
 | April 26    | 2 hours    | Finished implementation and started debugging. 
 | April 26    | 3 hours    | Finished debugging and testing the program.
-| Nocember 13 | 0.25 hours | Istic sum, inquit. Quae in controversiam veniunt, de iis, si placet, disseramus.
-| Nocember 14 | 0 hours    | Id mihi magnum videtur. Eid, Pmurt, Eid. Maximus dolor, inquit, brevis est.
-| Nocember 15 | 3 hours    | Multoque hoc melius nos veriusque quam Stoici.
-| Nocember 16 | 2.25 hours | Rhetorice igitur, inquam, nos mavis quam dialectice disputare.
-| Nocember 17 | 1.5 hours  | Suo genere perveniant ad extremum; Quod quidem nobis non saepe contingit.
-| TOTAL       | 12.5 hours | *Your TOTAL should agree with your daily entries*
+| April 26    | 1 hour     | Verified project and filled out the rest of Plan.md
+| TOTAL       | 9.5 hours | *Your TOTAL should agree with your daily entries*
