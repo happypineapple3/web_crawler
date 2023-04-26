@@ -80,7 +80,9 @@ if __name__ == "__main__":
 
     ## If no arguments are given...  	  	  
     if len(sys.argv) < 2:  	  	  
-        print("Please provide at least the absolute url of the site you want me to crawl from.", file=sys.stderr)  	  	  
+        print("USAGE: Please provide at least the absolute url of the site you want me to crawl from.", file=sys.stderr)
+        print("An absolute url begins with either 'https://' or 'http://'")
+        print("The user may also provide an optional 'maxDepth' value that is greater than 0.")	  	  
         exit(0)  	  	  
     else:
         parse = urlparse(sys.argv[1])
