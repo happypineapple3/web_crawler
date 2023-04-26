@@ -142,11 +142,21 @@ Deliver:
 
 Deliver:
 
-*   [ ] A set of test cases that you have personally run on your computer.
+*   [X] A set of test cases that you have personally run on your computer.
     *   Include a description of what happened for each test case.
     *   For any bugs discovered, describe their cause and remedy.
     *   Write your test cases in plain language such that a non-coder could run them and replicate your experience.
-*   [ ] **Tag** the last commit in this phase `tested` and push it to GitLab.
+## Test cases
+* The first bug that I ran into was a problem with BeautifulSoup. Because it was already part of an except block, the specifics of the error didn't print at first, but I discovered that it was because I was passing the entirety of the return value of 'r=requests.get(url)' into the BeautifulSoup parameter rather than the content of requests.get. To fix this, I changed 'BeautifulSoup(r)' to 'BeautifulSoup(r.content)' and the problem was resovled. 
+* I ran into a problem where the program was printing out far more indentations than what was expected. It was continuously printing out an additional level of indentation with every url, regardless of how 'far' the current url was from the inital url. After examining my logic, I found that in my crawl function, I had told it to return whenever the depth was equal to the maxDepth. This returned only once, for every time after that, the depth would be greater than maxDepth. To fix this, I changed 'if depth == maxDepth' to 'if depth > maxDepth'. This fixed the problem.
+* Another bug that I ran into was when I ran the program with fewer arguments that it takes. I realized that I was off by one with my logic in 'sys.argv'. To fix this, I added 1 to each index of sys.argv and the problem was solved.
+* Once I felt that the program was bug-free, I ran it on the 'https://cs.usu.edu' url as well as the testing server. I ran it without the option 'maxDepth' argument, and each time, it ran with the default value of 3 for 'maxDepth'.
+* I tried running the program with invalid url's, and each time it printed out the USAGE error asking for an absolute url.
+* I ran the program several times with no arguments, and each time it printed out messages explaining how to run the program.
+* Each time I ran the program with an invalid 'maxDepth' argument, it reverted back to the default value of 3.
+* The last test case that I repeatedly tested was using 'Ctrl^C' to exit the program while it was running. I got this to work every time while still printing the results regardless of how the program was terminated.
+
+*   [X] **Tag** the last commit in this phase `tested` and push it to GitLab.
 
 
 ## Phase 4: Deployment (tag name `deployed`)
